@@ -1,0 +1,11 @@
+@use "colors.scss" as c;
+$font: "Roboto";
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto";
+	background-color: c.$color-black;
+}
