@@ -310,3 +310,53 @@
 		text-align: start;
 	}
 }
+
+.hood {
+	padding: 70px 0;
+	&__container {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		@include title-style(c.$color-white);
+	}
+
+	&__subtitle {
+		@include title-style(c.$color-light-gray);
+		margin-top: 15px;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+	}
+
+	&__card {
+		border-radius: 10px;
+		background-color: c.$color-dark-gray;
+		padding: 18px 18px 22px;
+		height: 153px;
+		width: 240px;
+		display: grid;
+	}
+
+	&__card-icon {
+		img {
+			width: 42px;
+			height: 42px;
+		}
+	}
+
+	&__card-title {
+		@include text-style(14px, 21px);
+		color: c.$color-white;
+	}
+
+	&__card-text {
+		@include text-style(14px, 21px);
+		color: c.$color-light-gray;
+		margin-top: 7px;
+	}
+}
