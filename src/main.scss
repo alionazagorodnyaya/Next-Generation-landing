@@ -360,3 +360,120 @@
 		margin-top: 7px;
 	}
 }
+.blog {
+	&__container {
+		padding-top: 150px;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	&__headline {
+		display: flex;
+		text-align: center;
+		gap: 15px;
+		h2 {
+			@include title-style(c.$color-white);
+		}
+		p {
+			@include text-style(32px, 40px);
+			color: c.$color-light-gray;
+		}
+	}
+	&__image {
+		padding-top: 32px;
+		img {
+			padding-right: 5px;
+		}
+	}
+	&__btn {
+		padding-top: 30px;
+		button {
+			@include button-input(71px, 36px);
+			border-radius: 6px;
+			background-color: c.$color-light-gray;
+			color: c.$color-black;
+			align-items: center;
+		}
+	}
+}
+.footer {
+	padding-top: 220px;
+
+	&__container {
+		max-width: 1000px;
+		height: 293px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__subscribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 130px;
+	}
+	&__form {
+		display: flex;
+		.footer__input {
+			@include input(310px, 50px);
+		}
+		.footer__btn {
+			@include button-input(100px, 50px);
+		}
+	}
+
+	&__note {
+		margin-top: 16px;
+		color: c.$color-gray;
+		strong {
+			color: c.$color-light-gray;
+		}
+	}
+	&__nav {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			margin-bottom: 15px;
+			color: c.$color-light-gray;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 22.4px;
+		}
+		a {
+			color: rgba(85, 85, 91, 1);
+			text-decoration: none;
+		}
+	}
+
+	&__item {
+		margin-bottom: 10px;
+
+		button {
+			border-radius: 8px;
+			background-color: rgba(245, 59, 59, 1);
+			color: black;
+			border: none;
+		}
+
+		&__link {
+			font-size: 14px;
+		}
+	}
+}
